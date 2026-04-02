@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SMARTrackMobile.Views.Pages.AboutPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="About">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Language"
+                     Clicked="OnLanguageClicked"
+                     Order="Secondary" />
+    </ContentPage.ToolbarItems>
+
+    <VerticalStackLayout Padding="20" Spacing="16">
+        <Label x:Name="TitleLabel" FontSize="22" FontAttributes="Bold" />
+
+        <Label x:Name="ShowSettingsLabel" TextColor="Gray">
+            <Label.GestureRecognizers>
+                <TouchGestureRecognizer LongPressCommand="{Binding ShowSettingsToastCommand}" />
+            </Label.GestureRecognizers>
+        </Label>
+
+        <Label x:Name="ScanQrLabel" TextColor="Gray">
+            <Label.GestureRecognizers>
+                <TouchGestureRecognizer LongPressCommand="{Binding ScanQrForSettingsCommand}" />
+            </Label.GestureRecognizers>
+        </Label>
+
+        <Label x:Name="ScanDataMatrixLabel"
+               Text="Long-press here to scan Data Matrix"
+               TextColor="Gray">
+            <Label.GestureRecognizers>
+                <TouchGestureRecognizer LongPressCommand="{Binding ScanDataMatrixCommand}" />
+            </Label.GestureRecognizers>
+        </Label>
+
+        <Label x:Name="PhotoUploadLabel"
+               Text="Long-press here to take a photo and upload"
+               TextColor="Gray">
+            <Label.GestureRecognizers>
+                <TouchGestureRecognizer LongPressCommand="{Binding PhotoUploadCommand}" />
+            </Label.GestureRecognizers>
+        </Label>
+    </VerticalStackLayout>
+</ContentPage>
