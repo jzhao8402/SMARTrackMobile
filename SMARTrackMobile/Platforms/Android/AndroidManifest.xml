@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <uses-permission android:name="android.permission.CAMERA" />
+
+  <!-- If you later find exact alarms are restricted on your devices/targetSdk,
+       you may need this permission (don’t add unless needed/policy allows):
+       <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+  -->
+
+  <application android:label="SMARTrackMobile" />
+</manifest>
