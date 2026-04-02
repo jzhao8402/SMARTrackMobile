@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SMARTrackMobile.Views.Pages.DataMatrixScanPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:zxing="clr-namespace:ZXing.Net.Maui.Controls;assembly=ZXing.Net.Maui.Controls"
+    Title="Scan Data Matrix">
+
+    <Grid>
+        <zxing:CameraBarcodeReaderView x:Name="CameraView"
+                                       BarcodesDetected="OnBarcodesDetected" />
+
+        <Grid BackgroundColor="#80000000"
+              VerticalOptions="End"
+              Padding="16">
+            <Label Text="Point the camera at a Data Matrix code."
+                   TextColor="White" />
+        </Grid>
+    </Grid>
+</ContentPage>
