@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SMARTrackMobile.Views.Pages.DeltaPreSignInPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Delta Sign In">
+
+    <VerticalStackLayout Padding="20" Spacing="14">
+        <Label Text="Delta Sign In"
+               FontSize="22"
+               FontAttributes="Bold" />
+
+        <Label Text="Tap the button below to open Delta SSO in an embedded browser."
+               TextColor="Gray" />
+
+        <Button Text="Delta Sign In"
+                Clicked="OnDeltaSignInClicked" />
+    </VerticalStackLayout>
+</ContentPage>
