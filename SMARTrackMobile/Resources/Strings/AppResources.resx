@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="About_Title" xml:space="preserve"><value>About</value></data>
+  <data name="About_LangMenu" xml:space="preserve"><value>Language</value></data>
+  <data name="Lang_English" xml:space="preserve"><value>English</value></data>
+  <data name="Lang_Spanish" xml:space="preserve"><value>Spanish</value></data>
+  <data name="Lang_Changed" xml:space="preserve"><value>Language updated. The app will restart.</value></data>
+
+  <data name="About_LongPressToast" xml:space="preserve"><value>Long-press here to show settings (Toast)</value></data>
+  <data name="About_LongPressQr" xml:space="preserve"><value>Long-press here to scan QR code for settings</value></data>
+</root>
