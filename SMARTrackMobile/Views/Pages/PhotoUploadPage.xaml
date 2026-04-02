@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SMARTrackMobile.Views.Pages.PhotoUploadPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Photo Upload">
+
+    <VerticalStackLayout Padding="20" Spacing="12">
+        <Label Text="Take a photo and upload to Azure Blob Storage."
+               TextColor="Gray" />
+
+        <Button Text="Take Photo"
+                Clicked="OnTakePhotoClicked" />
+
+        <ActivityIndicator x:Name="Busy"
+                           IsRunning="False"
+                           IsVisible="False" />
+
+        <Label x:Name="ResultLabel"
+               TextColor="Gray"
+               LineBreakMode="WordWrap" />
+    </VerticalStackLayout>
+</ContentPage>
