@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="About_Title" xml:space="preserve"><value>Acerca de</value></data>
+  <data name="About_LangMenu" xml:space="preserve"><value>Idioma</value></data>
+  <data name="Lang_English" xml:space="preserve"><value>Inglés</value></data>
+  <data name="Lang_Spanish" xml:space="preserve"><value>Español</value></data>
+  <data name="Lang_Changed" xml:space="preserve"><value>Idioma actualizado. La aplicación se reiniciará.</value></data>
+
+  <data name="About_LongPressToast" xml:space="preserve"><value>Mantén presionado aquí para mostrar ajustes (Toast)</value></data>
+  <data name="About_LongPressQr" xml:space="preserve"><value>Mantén presionado aquí para escanear un QR para ajustes</value></data>
+</root>
