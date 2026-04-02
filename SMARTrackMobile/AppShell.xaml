@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="SMARTrackMobile.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:SMARTrackMobile.Views.Pages"
+    FlyoutBehavior="Flyout"
+    Title="SMARTrackMobile">
+
+    <!-- Single sign-in toggle item -->
+    <FlyoutItem x:Name="ToggleSignInItem"
+                Title="SMARTrack Sign In"
+                Icon="ic_login.png"
+                Route="signin">
+        <ShellContent x:Name="SignInShellContent"
+                      ContentTemplate="{DataTemplate pages:DeltaPreSignInPage}" />
+    </FlyoutItem>
+
+    <!-- Auth-only -->
+    <FlyoutItem x:Name="DashboardItem" Title="Dashboard" Icon="ic_dashboard.png" Route="dashboard">
+        <ShellContent ContentTemplate="{DataTemplate pages:DashboardPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem x:Name="BulletinsItem" Title="Bulletins" Icon="ic_bulletins.png" Route="bulletins">
+        <ShellContent ContentTemplate="{DataTemplate pages:BulletinsPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem x:Name="ProfileItem" Title="Profile" Icon="ic_profile.png" Route="profile">
+        <ShellContent ContentTemplate="{DataTemplate pages:ProfilePage}" />
+    </FlyoutItem>
+
+    <!-- Public -->
+    <FlyoutItem x:Name="SettingsItem" Title="Settings" Icon="ic_settings.png" Route="settings">
+        <ShellContent ContentTemplate="{DataTemplate pages:SettingsPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem x:Name="AboutItem" Title="About" Icon="ic_about.png" Route="about">
+        <ShellContent ContentTemplate="{DataTemplate pages:AboutPage}" />
+    </FlyoutItem>
+
+    <MenuItem x:Name="LogoutItem"
+              Text="Logout"
+              IconImageSource="ic_logout.png"
+              Clicked="OnLogoutClicked" />
+</Shell>
