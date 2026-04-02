@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SMARTrackMobile.Views.Pages.ProfilePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Profile">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Edit" Clicked="OnEditClicked" Order="Secondary" />
+        <ToolbarItem Text="Refresh" Clicked="OnRefreshClicked" Order="Secondary" />
+        <ToolbarItem Text="Help" Clicked="OnHelpClicked" Order="Secondary" />
+    </ContentPage.ToolbarItems>
+
+    <VerticalStackLayout Padding="20" Spacing="12">
+        <Label Text="Profile" FontSize="22" FontAttributes="Bold" />
+        <Label Text="Visible only when logged in." />
+    </VerticalStackLayout>
+</ContentPage>
